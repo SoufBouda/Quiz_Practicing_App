@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany Orientation Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/buttons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/theme.css') }}">
+    <meta name="description" content="Interactive quiz to learn about German culture and history.">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/app_icon.ico') }}">
+</head>
+<body>
+    <header>
+        <h1>Germany Orientation Quiz</h1>
+    </header>
+    <section id="quiz-selection">
+        <h2>Select a Quiz</h2>
+        <select id="quiz-dropdown">
+            {% for quiz in quizzes %}
+                <option value="{{ quiz }}">{{ quiz.replace('_', ' ') }}</option>
+            {% endfor %}
+        </select>
+    </section>
+    <section id="quiz-container">
+        <!-- Quiz Questions will be dynamically inserted here -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Soufiane Boudarraja | <a href="/admin">Admin</a></p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+</body>
+</html>

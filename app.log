@@ -1,0 +1,15 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.2:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 335-903-445
+127.0.0.1 - - [30/Oct/2025 16:23:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2025 16:23:18] "GET /static/assets/css/theme.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2025 16:23:18] "GET /static/assets/css/buttons.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2025 16:23:18] "GET /static/js/quiz.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2025 16:23:19] "GET /start-quiz?num_questions=10 HTTP/1.1" 200 -
